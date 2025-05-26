@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/AFNetworking'
   s.authors  = { 'Mattt Thompson' => 'm@mattt.me' }
   s.source   = { :git => 'https://github.com/AFNetworking/AFNetworking.git', :tag => s.version }
-
+  s.resources = ['AFNetworking/PrivacyInfo.xcprivacy']
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'
   s.watchos.deployment_target = '2.0'
@@ -55,6 +55,6 @@ Pod::Spec.new do |s|
   end
   
   s.resource_bundles = {
-  'AFNetworkingPrivacy' => ['AFNetworking/Resources/PrivacyInfo.xcprivacy']
+  'AFNetworkingPrivacy' => ['AFNetworking/PrivacyInfo.xcprivacy']
 }
 end
